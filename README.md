@@ -1,70 +1,224 @@
-# Getting Started with Create React App
+# Little Lemon Restaurant Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive React-based website for the Little Lemon Mediterranean restaurant. This project demonstrates front-end development skills including React, CSS Grid, responsive design, and interactive components.
 
-## Available Scripts
+## 🍋 Features
 
-In the project directory, you can run:
+### Core Functionality
+- **Responsive Design**: Mobile-first approach with CSS Grid and Flexbox
+- **Navigation**: Sticky navigation bar with mobile hamburger menu
+- **Routing**: React Router for seamless page navigation
+- **Interactive Components**: Dropdown menus, forms, and animated elements
 
-### `npm start`
+### Pages & Components
+- **Home Page**: Hero section, weekly specials, testimonials, and about section
+- **About Page**: Restaurant story, team information, and awards
+- **Menu Page**: Interactive menu with category filtering
+- **Reservations**: Booking form with animated dropdown for occasions
+- **Order Online**: Shopping cart functionality with checkout process
+- **Login/Register**: User authentication with localStorage persistence
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Technical Features
+- **State Management**: React hooks for component state
+- **Form Handling**: Controlled components with validation
+- **Local Storage**: Data persistence for reservations and orders
+- **Accessibility**: ARIA labels, focus management, and keyboard navigation
+- **Performance**: Optimized animations and responsive images
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🚀 Getting Started
 
-### `npm test`
+### Prerequisites
+- Node.js (version 14 or higher)
+- npm or yarn package manager
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Installation
 
-### `npm run build`
+1. Clone the repository:
+```bash
+git clone <repository-url>
+cd little-lemon
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Install dependencies:
+```bash
+npm install
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Start the development server:
+```bash
+npm start
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-### `npm run eject`
+### Available Scripts
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- `npm start` - Runs the app in development mode
+- `npm test` - Launches the test runner
+- `npm run build` - Builds the app for production
+- `npm run eject` - Ejects from Create React App (not recommended)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📁 Project Structure
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```
+src/
+├── components/
+│   ├── Navbar.js          # Navigation component
+│   ├── Home.js            # Home page component
+│   ├── About.js           # About page component
+│   ├── Menu.js            # Menu page component
+│   ├── Reservations.js    # Booking form component
+│   ├── OrderOnline.js     # Online ordering component
+│   ├── Login.js           # Authentication component
+│   ├── Footer.js          # Footer component
+│   └── *.css              # Component-specific styles
+├── App.js                 # Main app component with routing
+├── App.css               # Global styles
+└── index.js              # App entry point
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🎨 Design System
 
-## Learn More
+### Color Palette
+- **Primary Green**: `#495E57` - Main brand color
+- **Secondary Yellow**: `#F4CE14` - Accent color
+- **Light Gray**: `#EDEFEE` - Background color
+- **White**: `#FFFFFF` - Card backgrounds
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Typography
+- **Font Family**: System fonts (San Francisco, Segoe UI, etc.)
+- **Responsive**: Fluid typography using clamp()
+- **Hierarchy**: Clear heading structure (h1-h3)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Layout
+- **Grid System**: CSS Grid for responsive layouts
+- **Breakpoints**: Mobile-first with 768px and 1024px breakpoints
+- **Spacing**: Consistent padding and margins throughout
 
-### Code Splitting
+## 🔧 Key Components
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Navigation Bar
+- Sticky positioning
+- Mobile hamburger menu
+- Logo with diagonal lines design
+- Smooth transitions
 
-### Analyzing the Bundle Size
+### Reservation Form
+- Animated dropdown for occasions
+- Form validation
+- Local storage persistence
+- Responsive design
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Menu System
+- Category filtering
+- Interactive cards
+- Dietary information
+- Order functionality
 
-### Making a Progressive Web App
+### Shopping Cart
+- Add/remove items
+- Quantity controls
+- Total calculation
+- Checkout process
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 📱 Responsive Design
 
-### Advanced Configuration
+The website is fully responsive with three main breakpoints:
+- **Mobile**: < 768px
+- **Tablet**: 768px - 1024px
+- **Desktop**: > 1024px
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## ♿ Accessibility Features
 
-### Deployment
+- Semantic HTML structure
+- ARIA labels and roles
+- Keyboard navigation support
+- Focus management
+- High contrast mode support
+- Reduced motion preferences
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 🧪 Testing
 
-### `npm run build` fails to minify
+The project includes testing setup with:
+- Jest for unit testing
+- React Testing Library for component testing
+- Accessibility testing capabilities
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 📦 Dependencies
+
+### Core Dependencies
+- `react`: ^18.2.0
+- `react-dom`: ^18.2.0
+- `react-router-dom`: ^6.8.0
+
+### Development Dependencies
+- `@testing-library/react`: ^13.4.0
+- `@testing-library/jest-dom`: ^5.16.5
+- `@testing-library/user-event`: ^14.4.3
+
+## 🚀 Deployment
+
+### Build for Production
+```bash
+npm run build
+```
+
+### Deploy Options
+- **Netlify**: Drag and drop the `build` folder
+- **Vercel**: Connect GitHub repository
+- **GitHub Pages**: Use `gh-pages` package
+- **Firebase**: Use Firebase Hosting
+
+## 📋 Project Requirements Met
+
+### Module 1: Starting the Project
+- ✅ Development environment setup
+- ✅ Git version control
+- ✅ UX/UI planning and wireframing
+
+### Module 2: Project Foundations
+- ✅ Semantic HTML structure
+- ✅ CSS styling with reusable grid system
+- ✅ Component-based architecture
+
+### Module 3: Project Functionality
+- ✅ Table booking system with state management
+- ✅ Form handling and user input
+- ✅ Unit testing setup
+- ✅ Local storage for data persistence
+
+### Module 4: Graded Assessment
+- ✅ Complete functional website
+- ✅ Responsive design
+- ✅ Interactive components
+- ✅ Modern React practices
+
+## 🎯 Learning Outcomes
+
+This project demonstrates proficiency in:
+- **React Development**: Hooks, components, routing
+- **CSS Mastery**: Grid, Flexbox, animations, responsive design
+- **JavaScript**: ES6+, async operations, state management
+- **Web Accessibility**: ARIA, semantic HTML, keyboard navigation
+- **User Experience**: Intuitive navigation, clear information hierarchy
+- **Performance**: Optimized loading, smooth animations
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Add tests if applicable
+5. Submit a pull request
+
+## 📄 License
+
+This project is created for educational purposes as part of the Front-End Developer Capstone course.
+
+## 👨‍🍳 About Little Lemon
+
+Little Lemon is a family-owned Mediterranean restaurant located in Chicago, Illinois. The restaurant specializes in traditional Mediterranean cuisine with a modern twist, offering authentic flavors and warm hospitality.
+
+---
+
+**Built with ❤️ and lots of 🍋 for the Front-End Developer Capstone Project**

@@ -1,0 +1,77 @@
+/* BookingSlot Component Styles */
+.booking-slot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 8px;
+  border: 2px solid #ddd;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.booking-slot.available {
+  background-color: #EDEFEE;
+  border-color: #495E57;
+}
+
+.booking-slot.available:hover {
+  background-color: #F4CE14;
+  border-color: #F4CE14;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.booking-slot.booked {
+  background-color: #f5f5f5;
+  border-color: #ccc;
+  color: #999;
+  cursor: not-allowed;
+}
+
+.booking-slot .time {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.booking-slot .status {
+  font-size: 0.9rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.booking-slot.available .status {
+  background-color: #495E57;
+  color: #F4CE14;
+}
+
+.booking-slot.booked .status {
+  background-color: #ccc;
+  color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .booking-slot {
+    padding: 0.75rem;
+  }
+  
+  .booking-slot .time {
+    font-size: 1rem;
+  }
+  
+  .booking-slot .status {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .booking-slot {
+    padding: 0.5rem;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+} 

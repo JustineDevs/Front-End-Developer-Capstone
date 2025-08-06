@@ -1,0 +1,315 @@
+/* Reservations Component Styles */
+.reservations {
+  min-height: 100vh;
+  background-color: #EDEFEE;
+  padding: 2rem 0;
+}
+
+.reservations-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.reservations-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.reservations-header h1 {
+  font-size: 2.5rem;
+  color: #495E57;
+  margin-bottom: 1rem;
+}
+
+.reservations-header p {
+  font-size: 1.1rem;
+  color: #495E57;
+  line-height: 1.6;
+}
+
+/* Form Styles */
+.reservation-form {
+  background-color: #FFFFFF;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group.full-width {
+  grid-column: 1 / -1;
+}
+
+.form-group label {
+  font-weight: bold;
+  color: #495E57;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 0.75rem;
+  border: 2px solid #E0E0E0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  background-color: #FFFFFF;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #F4CE14;
+  box-shadow: 0 0 0 3px rgba(244, 206, 20, 0.1);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Dropdown Styles */
+.dropdown-container {
+  position: relative;
+}
+
+.dropdown {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem;
+  border: 2px solid #E0E0E0;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-height: 48px;
+}
+
+.dropdown:hover {
+  border-color: #F4CE14;
+}
+
+.dropdown.open {
+  border-color: #F4CE14;
+  box-shadow: 0 0 0 3px rgba(244, 206, 20, 0.1);
+}
+
+.dropdown.selected {
+  background-color: #495E57;
+  color: #FFFFFF;
+  border-color: #495E57;
+}
+
+.dropdown-text {
+  color: inherit;
+}
+
+.dropdown-arrow {
+  font-size: 0.8rem;
+  transition: transform 0.3s ease;
+}
+
+.dropdown.open .dropdown-arrow {
+  transform: rotate(180deg);
+}
+
+.dropdown-options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: #FFFFFF;
+  border: 2px solid #E0E0E0;
+  border-top: none;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  max-height: 200px;
+  overflow-y: auto;
+  animation: dropdownSlide 0.3s ease;
+}
+
+@keyframes dropdownSlide {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dropdown-option {
+  padding: 0.75rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-bottom: 1px dashed #E0E0E0;
+}
+
+.dropdown-option:last-child {
+  border-bottom: none;
+}
+
+.dropdown-option:hover {
+  background-color: #F4CE14;
+  color: #495E57;
+}
+
+/* Submit Button */
+.submit-btn {
+  background-color: #F4CE14;
+  color: #495E57;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.submit-btn:hover {
+  background-color: #EDEFEE;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.submit-btn:active {
+  transform: translateY(0);
+}
+
+/* Reservation Info */
+.reservation-info {
+  background-color: #495E57;
+  color: #EDEFEE;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.reservation-info h3 {
+  color: #F4CE14;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.reservation-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.reservation-info li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(244, 206, 20, 0.2);
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.reservation-info li:last-child {
+  border-bottom: none;
+}
+
+.reservation-info li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #F4CE14;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .reservations-container {
+    padding: 0 1rem;
+  }
+
+  .reservation-form {
+    padding: 1.5rem;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .reservations-header h1 {
+    font-size: 2rem;
+  }
+
+  .reservation-info {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .reservations-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .reservation-form {
+    padding: 1rem;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea,
+  .dropdown {
+    font-size: 16px; /* Prevents zoom on iOS */
+  }
+}
+
+/* Accessibility */
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus,
+.dropdown:focus {
+  outline: 2px solid #F4CE14;
+  outline-offset: 2px;
+}
+
+/* Loading state */
+.submit-btn:disabled {
+  background-color: #E0E0E0;
+  color: #999;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Success state */
+.submit-btn.success {
+  background-color: #4CAF50;
+  color: #FFFFFF;
+}
+
+/* Error state */
+.form-group.error input,
+.form-group.error select,
+.form-group.error textarea {
+  border-color: #f44336;
+}
+
+.form-group.error .error-message {
+  color: #f44336;
+  font-size: 0.8rem;
+  margin-top: 0.25rem;
+} 

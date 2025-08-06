@@ -1,0 +1,351 @@
+/* About Page Styles */
+.about-page {
+  min-height: 100vh;
+  background-color: #EDEFEE;
+}
+
+/* Hero Section */
+.about-hero {
+  background: linear-gradient(135deg, #495E57 0%, #F4CE14 100%);
+  padding: 4rem 2rem;
+  text-align: center;
+  color: #EDEFEE;
+}
+
+.about-hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #F4CE14;
+}
+
+.about-hero-content p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Container */
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Story Section */
+.about-story {
+  padding: 4rem 0;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.about-text h2 {
+  font-size: 2.5rem;
+  color: #495E57;
+  margin-bottom: 2rem;
+}
+
+.about-text p {
+  color: #495E57;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.about-image {
+  display: flex;
+  justify-content: center;
+}
+
+.about-image .image-placeholder {
+  min-height: 300px;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Philosophy Section */
+.about-philosophy {
+  padding: 4rem 0;
+  background-color: #FFFFFF;
+}
+
+.philosophy-content h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #495E57;
+  margin-bottom: 3rem;
+}
+
+.philosophy-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.philosophy-item {
+  text-align: center;
+  padding: 2rem;
+  background-color: #EDEFEE;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.philosophy-item:hover {
+  transform: translateY(-4px);
+}
+
+.philosophy-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.philosophy-item h3 {
+  color: #495E57;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.philosophy-item p {
+  color: #495E57;
+  line-height: 1.6;
+}
+
+/* Team Section */
+.about-team {
+  padding: 4rem 0;
+}
+
+.team-content h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #495E57;
+  margin-bottom: 3rem;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.team-member {
+  text-align: center;
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-4px);
+}
+
+.member-image {
+  height: 200px;
+  background-color: #F4CE14;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.member-image .image-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-member h3 {
+  color: #495E57;
+  font-size: 1.5rem;
+  margin: 1rem 0 0.5rem;
+}
+
+.member-title {
+  color: #F4CE14;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.team-member p {
+  color: #495E57;
+  line-height: 1.6;
+  padding: 0 1.5rem 1.5rem;
+}
+
+/* Awards Section */
+.about-awards {
+  padding: 4rem 0;
+  background-color: #495E57;
+  color: #EDEFEE;
+}
+
+.awards-content h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #F4CE14;
+  margin-bottom: 3rem;
+}
+
+.awards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.award-item {
+  text-align: center;
+  padding: 2rem;
+  background-color: #EDEFEE;
+  color: #495E57;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.award-item:hover {
+  transform: translateY(-4px);
+}
+
+.award-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.award-item h3 {
+  color: #495E57;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.award-item p {
+  color: #495E57;
+  font-size: 0.9rem;
+}
+
+/* Location Section */
+.about-location {
+  padding: 4rem 0;
+  background-color: #FFFFFF;
+}
+
+.location-content h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #495E57;
+  margin-bottom: 3rem;
+}
+
+.location-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.location-info h3 {
+  color: #495E57;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  margin-top: 2rem;
+}
+
+.location-info h3:first-child {
+  margin-top: 0;
+}
+
+.location-info p {
+  color: #495E57;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.location-map {
+  display: flex;
+  justify-content: center;
+}
+
+.location-map .image-placeholder {
+  min-height: 300px;
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .about-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .about-text h2,
+  .philosophy-content h2,
+  .team-content h2,
+  .awards-content h2,
+  .location-content h2 {
+    font-size: 2rem;
+  }
+
+  .location-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .about-container {
+    padding: 0 1rem;
+  }
+
+  .about-story,
+  .about-philosophy,
+  .about-team,
+  .about-awards,
+  .about-location {
+    padding: 2rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-hero {
+    padding: 2rem 1rem;
+  }
+
+  .about-hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .about-hero-content p {
+    font-size: 1rem;
+  }
+
+  .philosophy-grid,
+  .team-grid,
+  .awards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .philosophy-item,
+  .team-member,
+  .award-item {
+    padding: 1.5rem;
+  }
+
+  .about-text h2,
+  .philosophy-content h2,
+  .team-content h2,
+  .awards-content h2,
+  .location-content h2 {
+    font-size: 1.8rem;
+  }
+} 

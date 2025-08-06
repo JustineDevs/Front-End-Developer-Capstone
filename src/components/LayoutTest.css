@@ -1,0 +1,137 @@
+.layout-test {
+  padding: 2rem 0;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+.layout-test h1 {
+  color: #495E57;
+  margin-bottom: 3rem;
+}
+
+.layout-test h2 {
+  color: #495E57;
+  margin-bottom: 2rem;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+.layout-test section {
+  margin-bottom: 4rem;
+  padding: 2rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.test-card {
+  background: #EDEFEE;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  transition: all 0.3s ease;
+}
+
+.test-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.test-card h3 {
+  color: #495E57;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+
+.test-card p {
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Grid Test Styles */
+.grid-test .grid {
+  margin-bottom: 2rem;
+}
+
+/* Flex Test Styles */
+.flex-test .flex {
+  margin-bottom: 2rem;
+}
+
+/* Container Test Styles */
+.container-test {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.container-test .test-card {
+  margin-bottom: 1rem;
+}
+
+/* Utilities Test Styles */
+.utilities-test .flex {
+  margin-bottom: 2rem;
+}
+
+/* Spacing Test Styles */
+.spacing-test .grid {
+  margin-bottom: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .layout-test {
+    padding: 1rem 0;
+  }
+  
+  .layout-test section {
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .test-card {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .layout-test {
+    padding: 0.75rem 0;
+  }
+  
+  .layout-test section {
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .test-card {
+    padding: 0.75rem;
+  }
+  
+  .layout-test h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .layout-test h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* Large Screen Enhancements */
+@media (min-width: 1200px) {
+  .layout-test {
+    padding: 3rem 0;
+  }
+  
+  .layout-test section {
+    padding: 3rem;
+    margin-bottom: 5rem;
+  }
+  
+  .test-card {
+    padding: 2rem;
+  }
+} 

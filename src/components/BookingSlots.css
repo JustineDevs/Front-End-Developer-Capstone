@@ -1,0 +1,45 @@
+/* BookingSlots Component Styles */
+.booking-slots {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
+}
+
+.booking-slots h3 {
+  color: #495E57;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+.slots-container {
+  display: grid;
+  gap: 1rem;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .booking-slots {
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  
+  .booking-slots h3 {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .booking-slots {
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .slots-container {
+    max-width: 100%;
+  }
+} 

@@ -1,0 +1,332 @@
+/* Login Page Styles */
+.login-page {
+  min-height: 100vh;
+  background-color: #EDEFEE;
+}
+
+/* Hero Section */
+.login-hero {
+  background: linear-gradient(135deg, #495E57 0%, #F4CE14 100%);
+  padding: 4rem 2rem;
+  text-align: center;
+  color: #EDEFEE;
+}
+
+.login-hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #F4CE14;
+}
+
+.login-hero-content p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Container */
+.login-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+/* Login Card */
+.login-card {
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.login-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.login-header h2 {
+  color: #495E57;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.login-header p {
+  color: #495E57;
+  font-size: 1rem;
+}
+
+.toggle-mode-btn {
+  background: none;
+  border: none;
+  color: #F4CE14;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.toggle-mode-btn:hover {
+  color: #495E57;
+}
+
+/* Form Styles */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: bold;
+  color: #495E57;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.form-group input {
+  padding: 0.75rem;
+  border: 2px solid #E0E0E0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #F4CE14;
+  box-shadow: 0 0 0 3px rgba(244, 206, 20, 0.1);
+}
+
+/* Checkbox Styles */
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: #495E57;
+  font-size: 0.9rem;
+}
+
+.checkbox-label input[type="checkbox"] {
+  margin-right: 0.5rem;
+  width: 16px;
+  height: 16px;
+}
+
+/* Submit Button */
+.submit-btn {
+  background-color: #F4CE14;
+  color: #495E57;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+.submit-btn:hover {
+  background-color: #EDEFEE;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Login Footer */
+.login-footer {
+  text-align: center;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #EDEFEE;
+}
+
+.forgot-password {
+  color: #F4CE14;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.forgot-password:hover {
+  color: #495E57;
+}
+
+/* Benefits Section */
+.login-benefits {
+  background-color: #495E57;
+  color: #EDEFEE;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.login-benefits h3 {
+  color: #F4CE14;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.benefit-item {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #EDEFEE;
+  color: #495E57;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.benefit-item:hover {
+  transform: translateY(-4px);
+}
+
+.benefit-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.benefit-item h4 {
+  color: #495E57;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.benefit-item p {
+  color: #495E57;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .login-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .benefits-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .login-hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .login-container {
+    padding: 1rem;
+  }
+
+  .login-card,
+  .login-benefits {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-hero {
+    padding: 2rem 1rem;
+  }
+
+  .login-hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .login-hero-content p {
+    font-size: 1rem;
+  }
+
+  .login-header h2 {
+    font-size: 1.8rem;
+  }
+
+  .login-card,
+  .login-benefits {
+    padding: 1rem;
+  }
+
+  .benefit-item {
+    padding: 1rem;
+  }
+}
+
+/* Animation for form elements */
+.login-form {
+  animation: fadeInUp 0.6s ease;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Focus states for accessibility */
+.form-group input:focus,
+.submit-btn:focus,
+.toggle-mode-btn:focus {
+  outline: 2px solid #F4CE14;
+  outline-offset: 2px;
+}
+
+/* Loading state */
+.submit-btn:disabled {
+  background-color: #E0E0E0;
+  color: #999;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Success state */
+.submit-btn.success {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Error state */
+.form-group.error input {
+  border-color: #f44336;
+}
+
+.form-group.error .error-message {
+  color: #f44336;
+  font-size: 0.8rem;
+  margin-top: 0.25rem;
+} 

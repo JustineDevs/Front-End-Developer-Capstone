@@ -1,0 +1,38 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#495E57"/>
+  
+  <!-- Decorative elements -->
+  <circle cx="200" cy="200" r="150" fill="#F4CE14" opacity="0.1"/>
+  <circle cx="1000" cy="400" r="100" fill="#F4CE14" opacity="0.1"/>
+  
+  <!-- Main logo area -->
+  <g transform="translate(600, 315)">
+    <!-- Logo circle -->
+    <circle cx="0" cy="0" r="80" fill="#F4CE14" stroke="#495E57" stroke-width="4"/>
+    
+    <!-- Diagonal lines for logo -->
+    <path d="M-40 -40 L40 40 M40 -40 L-40 40" stroke="#495E57" stroke-width="6" stroke-linecap="round"/>
+    
+    <!-- Center circle -->
+    <circle cx="0" cy="0" r="15" fill="#495E57"/>
+  </g>
+  
+  <!-- Restaurant name -->
+  <text x="600" y="500" text-anchor="middle" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="#F4CE14">
+    Little Lemon
+  </text>
+  
+  <!-- Tagline -->
+  <text x="600" y="540" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#EDEFEE">
+    Mediterranean Restaurant
+  </text>
+  
+  <!-- Additional decorative elements -->
+  <g opacity="0.3">
+    <circle cx="150" cy="150" r="20" fill="#F4CE14"/>
+    <circle cx="1050" cy="150" r="15" fill="#F4CE14"/>
+    <circle cx="150" cy="480" r="12" fill="#F4CE14"/>
+    <circle cx="1050" cy="480" r="18" fill="#F4CE14"/>
+  </g>
+</svg> 

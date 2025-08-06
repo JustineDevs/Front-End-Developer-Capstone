@@ -1,0 +1,122 @@
+/* BookingPage Component Styles */
+.booking-page {
+  padding: 4rem 0;
+  background-color: #EDEFEE;
+  min-height: 100vh;
+}
+
+.booking-page h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #495E57;
+}
+
+.booking-page > .container > p {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.booking-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.booking-info {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  height: fit-content;
+}
+
+.booking-info h2 {
+  color: #495E57;
+  margin-bottom: 1rem;
+}
+
+.booking-info p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.restaurant-hours h3 {
+  color: #495E57;
+  margin-bottom: 1rem;
+}
+
+.restaurant-hours ul {
+  list-style: none;
+  padding: 0;
+}
+
+.restaurant-hours li {
+  margin-bottom: 0.5rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.booking-form-container {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.booking-form-container h2 {
+  color: #495E57;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .booking-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .booking-page {
+    padding: 2rem 0;
+  }
+
+  .booking-info,
+  .booking-form-container {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .booking-page {
+    padding: 1rem 0;
+  }
+
+  .booking-info,
+  .booking-form-container {
+    padding: 1rem;
+  }
+
+  .booking-page h1 {
+    font-size: 2rem;
+  }
+}
+
+/* Large Screen Enhancements */
+@media (min-width: 1200px) {
+  .booking-page {
+    padding: 6rem 0;
+  }
+
+  .booking-info,
+  .booking-form-container {
+    padding: 3rem;
+  }
+} 

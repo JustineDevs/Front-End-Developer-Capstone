@@ -1,0 +1,168 @@
+/* Specials Component Styles */
+.highlights {
+  padding: 4rem 2rem;
+  background-color: #EDEFEE;
+}
+
+.highlights-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.highlights-header h2 {
+  font-size: clamp(2rem, 4vw, 2.5rem);
+  color: #495E57;
+  margin: 0;
+}
+
+.order-button {
+  background-color: #495E57;
+  color: #F4CE14;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.order-button:hover {
+  background-color: #F4CE14;
+  color: #495E57;
+}
+
+.highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.highlight-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.highlight-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.highlight-image {
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(45deg, #495E57, #F4CE14);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.highlight-content {
+  padding: 1.5rem;
+}
+
+.highlight-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.highlight-header h3 {
+  font-size: 1.25rem;
+  color: #495E57;
+  margin: 0;
+  flex: 1;
+}
+
+.price {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #F4CE14;
+  background-color: #495E57;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+}
+
+.highlight-content p {
+  color: #666;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.order-delivery-btn {
+  background-color: #495E57;
+  color: #F4CE14;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+}
+
+.order-delivery-btn:hover {
+  background-color: #F4CE14;
+  color: #495E57;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .highlights-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .highlights-header h2 {
+    font-size: 2rem;
+  }
+
+  .highlights {
+    padding: 2rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .highlights-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .highlight-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .price {
+    align-self: flex-start;
+  }
+
+  .highlights {
+    padding: 1.5rem 1rem;
+  }
+}
+
+/* Large Screen Enhancements */
+@media (min-width: 1200px) {
+  .highlights-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+} 
