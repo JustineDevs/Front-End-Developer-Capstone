@@ -2,21 +2,21 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { CssBaseline, Container } from '@mui/material';
-import './App.css';
-import Header from './components/Header';
-import Nav from './components/Nav';
-import Main from './components/Main';
-import Homepage from './components/Homepage';
-import About from './components/About';
-import Menu from './components/Menu';
-import Reservations from './components/Reservations';
-import OrderOnline from './components/OrderOnline';
-import Login from './components/Login';
-import BookingPage from './components/BookingPage';
-import ConfirmedBooking from './components/ConfirmedBooking';
-import LayoutTest from './components/LayoutTest';
-import StylingTest from './components/StylingTest';
-import Footer from './components/Footer';
+import './styles/App.css';
+import Header from './components/layout/Header';
+import Nav from './components/layout/Nav';
+import Main from './components/layout/Main';
+import Homepage from './components/pages/Homepage';
+import About from './components/pages/About';
+import Menu from './components/pages/Menu';
+import Reservations from './components/pages/Reservations';
+import OrderOnline from './components/pages/OrderOnline';
+import Login from './components/forms/Login';
+import BookingPage from './components/booking/BookingPage';
+import ConfirmedBooking from './components/booking/ConfirmedBooking';
+import LayoutTest from './components/ui/LayoutTest';
+import StylingTest from './components/ui/StylingTest';
+import Footer from './components/layout/Footer';
 
 // Create a professional theme
 const theme = createTheme({

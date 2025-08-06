@@ -1,6 +1,6 @@
 import React, { useReducer } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { initializeTimes, updateTimes } from '../utils/bookingReducer';
+import { initializeTimes, updateTimes } from '../../utils/api/bookingReducer';
 import './Main.css';
 
 function Main({ children }) {
